@@ -1,0 +1,139 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 25px 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.compra {
+    max-width: 500px;
+    margin: 0 auto 35px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.compra h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: white;
+}
+
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#resultado {
+    margin-top: 20px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.caja {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+}
+
+.billete,
+.moneda {
+    padding: 18px 10px;
+    background-color: white;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.billete {
+    border-top: 5px solid #60a5fa;
+}
+
+.moneda {
+    border-top: 5px solid #fbbf24;
+}
+
+.valor {
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.cantidad {
+    color: #475569;
+}
+
+.total {
+    margin: 30px 0;
+    padding: 22px;
+    background-color: #dbeafe;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .compra {
+        padding: 18px;
+    }
+
+    .total {
+        font-size: 18px;
+    }
+}
